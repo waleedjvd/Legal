@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en" dir="auto">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/products.css">
+        <title>Products</title>
+    
+
+</head>
+
+<body>
+
+     <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../Html/index.html">Legal Rifles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../Html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../Html/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/customers.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/cities.html">Cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Premium
+                            <span class="badge bg-warning text-dark">Coming Soon</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hot & Others
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Russian Versions
+                                    <span class="badge bg-warning text-dark">Coming Soon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Afghani Versions
+                                    <span class="badge bg-warning text-dark">Coming Soon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    American Versions
+                                    <span class="badge bg-warning text-dark">Coming Soon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../Html/return.html">Return & Exchange Policies</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light navbar-button" type="submit">Search</button>
+                </form>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn navbar-button btn-danger mx-2" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    Login
+                </button>
+
+                <!-- Login Modal -->
+                <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                            with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn navbar-button btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#signupModal">
+                    SignUp
+                </button>
+
+                <!-- SignUp Modal -->
+                <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="signupModalLabel">Get an account</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="signupEmail">Email address</label>
+                                        <input type="email" class="form-control" id="signupEmail"
+                                            placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                            with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="signupPassword">Password</label>
+                                        <input type="password" class="form-control" id="signupPassword"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirmPassword">Confirm Password</label>
+                                        <input type="password" class="form-control" id="confirmPassword"
+                                            placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+
+    <main>
+        <!-- PRODUCT DETAILS -->
+        <!-- Assault Rifle 1: M416 -->
+        <div id="main-content" class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="responsive-image" src="../Images/M416.png"
+                            alt="M416 Assault Rifle">
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="path">
+                            <a href="../Html/index.html">Home</a> / <a href="../Html/products.html">Products</a>
+                        </div>
+                        <h1 class="mb-4">M416 Assault Rifle</h1>
+                        <p>The M416 is a high-quality assault rifle known for its reliability and durability. Widely
+                            used by military and law enforcement agencies worldwide, the M416 features robust
+                            construction and ease of maintenance, making it a popular choice among firearm enthusiasts.
+                        </p>
+                        <button class="btn card-button" data-bs-toggle="modal" data-bs-target="#paymentModal">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assault Rifle 2: AK-47 -->
+        <div id="main-content" class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="responsive-image" src="../Images/Ak-47.png"
+                            alt="AK-47 Assault Rifle">
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="path">
+                            <a href="../Html/index.html">Home</a> / <a href="../Html/products.html">Products</a>
+                        </div>
+                        <h1 class="mb-4">AK-47 Assault Rifle</h1>
+                        <p>The AK-47 is one of the most iconic assault rifles globally, known for its ruggedness and
+                            simplicity. It has been in continuous production since its inception and is favored by
+                            military forces and insurgents alike for its reliability and ease of use.</p>
+                        <button class="btn card-button" data-bs-toggle="modal" data-bs-target="#paymentModal">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assault Rifle 3: M4 Carbine -->
+        <div id="main-content" class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="responsive-image" src="../Images/M4-Carbine.png"
+                            alt="M4 Carbine Assault Rifle">
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="path">
+                            <a href="../Html/index.html">Home</a> / <a href="../Html/products.html">Products</a>
+                        </div>
+                        <h1 class="mb-4">M4 Carbine Assault Rifle</h1>
+                        <p>The M4 Carbine is a versatile and highly customizable assault rifle used by military and law
+                            enforcement units worldwide. It is known for its compact size, lightweight design, and
+                            adaptability to various combat situations.</p>
+                        <button class="btn card-button" data-bs-toggle="modal" data-bs-target="#paymentModal">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assault Rifle 4: SCAR-L -->
+        <div id="main-content" class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="responsive-image" src="../Images/Scar-L.png"
+                            alt="SCAR-L Assault Rifle">
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="path">
+                            <a href="../Html/index.html">Home</a> / <a href="../Html/products.html">Products</a>
+                        </div>
+                        <h1 class="mb-4">SCAR-L Assault Rifle</h1>
+                        <p>The SCAR-L is a modern assault rifle designed for special operations forces. It is praised
+                            for its reliability, accuracy, and modular design, allowing for easy customization based on
+                            mission requirements.</p>
+                        <button class="btn card-button" data-bs-toggle="modal" data-bs-target="#paymentModal">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assault Rifle 5: FN SCAR-H -->
+        <div id="main-content" class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="responsive-image" src="../Images/Fn-scar.png"
+                            alt="FN SCAR-H Assault Rifle">
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="path">
+                            <a href="../Html/index.html">Home</a> / <a href="../Html/products.html">Products</a>
+                        </div>
+                        <h1 class="mb-4">FN SCAR-H Assault Rifle</h1>
+                        <p>The FN SCAR-H is a battle-proven assault rifle known for its reliability, accuracy, and
+                            versatility. It is chambered in the powerful 7.62x51mm NATO cartridge, making it suitable
+                            for long-range engagements.</p>
+                        <button class="btn card-button" data-bs-toggle="modal" data-bs-target="#paymentModal">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assault Rifle 6: HK416 -->
+        <div id="main-content" class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="responsive-image" src="../Images/Hk-416.png"
+                            alt="HK416 Assault Rifle">
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="path">
+                            <a href="../Html/index.html">Home</a> / <a href="../Html/products.html">Products</a>
+                        </div>
+                        <h1 class="mb-4">HK416 Assault Rifle</h1>
+                        <p>The HK416 is a renowned assault rifle used by elite military and law enforcement units
+                            worldwide. It features a gas piston operating system for enhanced reliability and reduced
+                            recoil, making it ideal for close-quarters combat.</p>
+                        <button class="btn card-button" data-bs-toggle="modal" data-bs-target="#paymentModal">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assault Rifle 7: FAMAS -->
+        <div id="main-content" class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="responsive-image" src="../Images/Famas.png"
+                            alt="FAMAS Assault Rifle">
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="path">
+                            <a href="../Html/index.html">Home</a> / <a href="../Html/products.html">Products</a>
+                        </div>
+                        <h1 class="mb-4">FAMAS Assault Rifle</h1>
+                        <p>The FAMAS is a bullpup assault rifle known for its unique design and compact size. It has
+                            been used by the French military for decades and is valued for its reliability and
+                            maneuverability in urban combat situations.</p>
+                        <button class="btn card-button" data-bs-toggle="modal" data-bs-target="#paymentModal">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assault Rifle 8: Steyr AUG -->
+        <div id="main-content" class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="responsive-image" src="../Images/Steyr-Aug.png"
+                            alt="Steyr AUG Assault Rifle">
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="path">
+                            <a href="../Html/index.html">Home</a> / <a href="../Html/products.html">Products</a>
+                        </div>
+                        <h1 class="mb-4">Steyr AUG Assault Rifle</h1>
+                        <p>The Steyr AUG is an Austrian bullpup assault rifle known for its futuristic design and
+                            modular construction. It offers excellent accuracy and handling, making it a favorite among
+                            special forces units worldwide.</p>
+                        <button class="btn card-button" data-bs-toggle="modal" data-bs-target="#paymentModal">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assault Rifle 9: Tavor X95 -->
+        <div id="main-content" class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="responsive-image" src="../Images/Tavor.png"
+                            alt="Tavor X95 Assault Rifle">
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="path">
+                            <a href="../Html/index.html">Home</a> / <a href="../Html/products.html">Products</a>
+                        </div>
+                        <h1 class="mb-4">Tavor X95 Assault Rifle</h1>
+                        <p>The Tavor X95 is an Israeli bullpup assault rifle known for its compact size and versatility.
+                            It is highly reliable and offers exceptional ergonomics, making it suitable for a wide range
+                            of combat scenarios.</p>
+                        <button class="btn card-button" data-bs-toggle="modal" data-bs-target="#paymentModal">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assault Rifle 10: QBZ-95 -->
+        <div id="main-content" class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="responsive-image" src="../Images/QBZ-95.png"
+                            alt="QBZ-95 Assault Rifle">
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="path">
+                            <a href="../Html/index.html">Home</a> / <a href="../Html/products.html">Products</a>
+                        </div>
+                        <h1 class="mb-4">QBZ-95 Assault Rifle</h1>
+                        <p>The QBZ-95 is a Chinese bullpup assault rifle known for its distinctive appearance and
+                            reliable performance. It is widely used by the People's Liberation Army and offers a good
+                            balance of firepower and maneuverability.</p>
+                        <button class="btn card-button" data-bs-toggle="modal" data-bs-target="#paymentModal">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Payment Modal -->
+        <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="paymentModalLabel">Payment Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="weaponType" class="form-label">Weapon Type</label>
+                                <select class="form-select" id="weaponType">
+                                    <option selected>Select Weapon Type</option>
+                                    <option value="rifle">Rifle</option>
+                                    <option value="pistol">Pistol</option>
+                                    <option value="shotgun">Shotgun</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="weaponModel" class="form-label">Weapon Model</label>
+                                <input type="text" class="form-control" id="weaponModel"
+                                    placeholder="Enter Weapon Model">
+                            </div>
+                            <div class="mb-3">
+                                <label for="caliber" class="form-label">Caliber</label>
+                                <input type="text" class="form-control" id="caliber" placeholder="Enter Caliber">
+                            </div>
+                            <div class="mb-3">
+                                <label for="quantity" class="form-label">Quantity</label>
+                                <input type="number" class="form-control" id="quantity" placeholder="Enter Quantity">
+                            </div>
+                            <div class="mb-3">
+                                <label for="paymentMethod" class="form-label">Payment Method</label>
+                                <select class="form-select" id="paymentMethod">
+                                    <option selected>Select Payment Method</option>
+                                    <option value="creditCard">Credit Card</option>
+                                    <option value="paypal">PayPal</option>
+                                    <option value="crypto">Cryptocurrency</option>
+                                </select>
+                            </div>
+                            <div id="cardInfoFields" style="display: none;">
+                                <div class="mb-3">
+                                    <label for="cardNumber" class="form-label">Card Number</label>
+                                    <input type="text" class="form-control" id="cardNumber"
+                                        placeholder="Enter Card Number">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="expiryDate" class="form-label">Expiry Date</label>
+                                    <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+                                </div>
+                            </div>
+                            <div id="paypalInfoFields" style="display: none;">
+                                <div class="mb-3">
+                                    <label for="paypalEmail" class="form-label">PayPal Email</label>
+                                    <input type="email" class="form-control" id="paypalEmail"
+                                        placeholder="Enter PayPal Email">
+                                </div>
+                            </div>
+                            <div id="cryptoInfoFields" style="display: none;">
+                                <div class="mb-3">
+                                    <label for="cryptoWallet" class="form-label">Crypto Wallet Address</label>
+                                    <input type="text" class="form-control" id="cryptoWallet"
+                                        placeholder="Enter Wallet Address">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="paymentAmount" class="form-label">Payment Amount</label>
+                                <input type="number" class="form-control" id="paymentAmount"
+                                    placeholder="Enter Payment Amount">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Payment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">Copyright © 2024 Legal Riffles. All rights reserved.</div>
+                </div>
+                <div class="col-auto">
+                    <a class="small" href="#!">Privacy</a>
+                    <span class="mx-1">·</span>
+                    <a class="small" href="#!">Terms</a>
+                    <span class="mx-1">·</span>
+                    <a class="small" href="/Html/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('paymentMethod').addEventListener('change', function () {
+            var paymentMethod = this.value;
+            var cardInfoFields = document.getElementById('cardInfoFields');
+            var paypalInfoFields = document.getElementById('paypalInfoFields');
+            var cryptoInfoFields = document.getElementById('cryptoInfoFields');
+
+            if (paymentMethod === 'creditCard') {
+                cardInfoFields.style.display = 'block';
+                paypalInfoFields.style.display = 'none';
+                cryptoInfoFields.style.display = 'none';
+            } else if (paymentMethod === 'paypal') {
+                cardInfoFields.style.display = 'none';
+                paypalInfoFields.style.display = 'block';
+                cryptoInfoFields.style.display = 'none';
+            } else if (paymentMethod === 'crypto') {
+                cardInfoFields.style.display = 'none';
+                paypalInfoFields.style.display = 'none';
+                cryptoInfoFields.style.display = 'block';
+            } else {
+                cardInfoFields.style.display = 'none';
+                paypalInfoFields.style.display = 'none';
+                cryptoInfoFields.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

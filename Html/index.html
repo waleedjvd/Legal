@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ar" dir="auto">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/mystyle.css">
+        <title>Legal Rifles</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../Html/index.html">Legal Rifles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/customers.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/cities.html">Cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Premium
+                            <span class="badge bg-warning text-dark">Coming Soon</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hot & Others
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Russian Versions
+                                    <span class="badge bg-warning text-dark">Coming Soon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Afghani Versions
+                                    <span class="badge bg-warning text-dark">Coming Soon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    American Versions
+                                    <span class="badge bg-warning text-dark">Coming Soon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../Html/return.html">Return & Exchange Policies</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light navbar-button" type="submit">Search</button>
+                </form>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn navbar-button btn-danger mx-2" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    Login
+                </button>
+
+                <!-- Login Modal -->
+                <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                            with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn navbar-button btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#signupModal">
+                    SignUp
+                </button>
+
+                <!-- SignUp Modal -->
+                <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="signupModalLabel">Get an account</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="signupEmail">Email address</label>
+                                        <input type="email" class="form-control" id="signupEmail"
+                                            placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                            with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="signupPassword">Password</label>
+                                        <input type="password" class="form-control" id="signupPassword"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirmPassword">Confirm Password</label>
+                                        <input type="password" class="form-control" id="confirmPassword"
+                                            placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <main>
+        <section class="hero-section d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="../Images/Hero.png" class="img-fluid" alt="Hero Image">
+                    </div>
+                    <div class="col-md-4 d-flex flex-column justify-content-center text-center text-md-start">
+                        <h1 class="neon-text">Welcome</h1>
+                        <p class="lead neon-text">Superior Quality Guaranteed.</p>
+                        <a href="#" class="btn btn-primary neon-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container">
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Firearms Collection.</h2>
+                <p class="lead">Welcome to Legal Rifles, your premier destination for firearms enthusiasts. As the sole
+                    proprietor licensed and authorized by the government, we offer a curated selection of high-quality
+                    rifles for all your shooting needs. With our commitment to legality and safety, you can trust in the
+                    authenticity and reliability of every firearm in our inventory. Explore our collection today and
+                    experience the confidence that comes with owning a legally acquired rifle.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    width="500" height="500" src="../Images/Img-1.png" alt="Img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Superior Quality Guaranteed </h2>
+                <p class="lead">At Legal Rifles, we take pride in delivering nothing but the finest firearms to our
+                    customers. Our commitment to excellence ensures that each product in our inventory meets rigorous
+                    standards of quality and performance. From precision engineering to meticulous craftsmanship, every
+                    rifle is crafted with utmost care to provide you with unrivaled reliability and accuracy. With Legal
+                    Rifles, you can rest assured knowing that you're investing in a product that exceeds expectations
+                    and delivers unparalleled satisfaction. Experience the difference of 100% quality with Legal Rifles
+                    today.
+                    here.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    width="500" height="500" src="../Images/Img-2.png" alt="Img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Unmatched Performance, Unbeatable Value.</h2>
+                <p class="lead">Unlock the full potential of your shooting experience with Legal Rifles. Our dedication
+                    to excellence extends beyond just quality – it's about delivering unparalleled performance with
+                    every firearm we offer. Whether you're a seasoned marksman or a novice shooter, our rifles are
+                    engineered to deliver consistent accuracy, reliability, and precision. With Legal Rifles, you're not
+                    just buying a product; you're investing in a legacy of excellence that ensures your satisfaction
+                    with every shot fired. Elevate your shooting game and discover the perfect blend of performance and
+                    value with Legal Rifles today.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    width="500" height="500" src="../Images/Img-3.png" alt="Img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Precision Engineering, Uncompromising Quality.</h2>
+                <p class="lead">At Legal Rifles, we believe in the power of precision. Each rifle in our collection is a
+                    testament to our unwavering commitment to excellence and craftsmanship. From the selection of
+                    premium materials to the meticulous assembly process, every step is undertaken with one goal in
+                    mind: to deliver a product that exceeds expectations. With Legal Rifles, you're not just purchasing
+                    a firearm – you're investing in a legacy of superior performance and reliability. Experience the
+                    difference that precision engineering makes and elevate your shooting experience with Legal Rifles
+                    today.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                    width="500" height="500" src="../Images/Img-4.png" alt="Img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">Copyright © 2024 Legal Riffles. All rights reserved.</div>
+                </div>
+                <div class="col-auto">
+                    <a class="small" href="#!">Privacy</a>
+                    <span class="mx-1">·</span>
+                    <a class="small" href="#!">Terms</a>
+                    <span class="mx-1">·</span>
+                    <a class="small" href="../Html/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

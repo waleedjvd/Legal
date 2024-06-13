@@ -1,0 +1,164 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #FDFFE2;
+}
+
+.badge-coming-soon {
+    font-size: 0.75em;
+    margin-left: 5px;
+}
+
+.contact-section {
+    padding: 60px 0;
+    background: linear-gradient(to right, #1A2130, #83B4FF);
+    color: #FDFFE2;
+    text-align: center;
+}
+
+.card {
+    background: #1A2130;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1 {
+    font-weight: bold;
+    color: #FDFFE2;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+footer {
+    background-color: black;
+    color: white; 
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+}
+
+.contact-info h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #83B4FF;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #5A72A0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #83B4FF;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #FDFFE2;
+    display: block;
+    text-align: left;
+}
+
+.form-control {
+    background-color: #FDFFE2;
+    color: #1A2130;
+    border: 1px solid #83B4FF;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #5A72A0;
+    border-color: #83B4FF;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #83B4FF;
+    color: #1A2130;
+    transform: translateY(-2px);
+}
+
+.navbar-search-form .form-control {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 0;
+}
+
+.navbar-button {
+    background-color: #6B8A7A;
+    border-color: #6B8A7A;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: #DAD3BE;
+    color: #254336;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        margin-top: 20px;
+    }
+}
+
+/* Index.Html */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to right, #254336, #6B8A7A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.neon-text {
+    color: white;
+    text-shadow: 0 0 5px #6B8A7A, 0 0 10px #6B8A7A, 0 0 20px #6B8A7A, 0 0 40px #6B8A7A, 0 0 80px #6B8A7A;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+.neon-btn {
+    background-color: #6B8A7A;
+    border-color: #6B8A7A;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.neon-btn:hover {
+    background-color: #DAD3BE;
+    color: #254336;
+    transform: translateY(-2px);
+}
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px #6B8A7A, 0 0 10px #6B8A7A, 0 0 20px #6B8A7A, 0 0 40px #6B8A7A, 0 0 80px #6B8A7A;
+    }
+    to {
+        text-shadow: 0 0 10px #6B8A7A, 0 0 20px #6B8A7A, 0 0 40px #6B8A7A, 0 0 80px #6B8A7A, 0 0 160px #6B8A7A;
+    }
+}
+

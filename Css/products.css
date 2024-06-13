@@ -1,0 +1,53 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.badge-coming-soon {
+    font-size: 0.75em;
+    margin-left: 5px;
+}
+
+#main-content {
+    margin-top: 100px;
+
+}
+
+.card {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.responsive-image {
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.info {
+    padding: 20px;
+}
+
+.card-button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+.col-md-6 p {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+  }
