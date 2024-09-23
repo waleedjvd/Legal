@@ -1,349 +1,262 @@
 <!DOCTYPE html>
 <html lang="ar" dir="auto">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
-      integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../Css/customers.css" />
-    <title>Customers</title>
-  </head>
 
-  <body>
-    
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="../Html/index.html">Legal Rifles</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="../Html/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="../Html/products.html">Products</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="../Html/contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" href="../Html/customers.html">Customers</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="../Html/cities.html">Cities</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">
-                          Premium
-                          <span class="badge bg-warning text-dark">Coming Soon</span>
-                      </a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Hot & Others
-                      </a>
-                      <ul class="dropdown-menu">
-                          <li>
-                              <a class="dropdown-item" href="#">
-                                  Russian Versions
-                                  <span class="badge bg-warning text-dark">Coming Soon</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a class="dropdown-item" href="#">
-                                  Afghani Versions
-                                  <span class="badge bg-warning text-dark">Coming Soon</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a class="dropdown-item" href="#">
-                                  American Versions
-                                  <span class="badge bg-warning text-dark">Coming Soon</span>
-                              </a>
-                          </li>
-                          <li>
-                              <hr class="dropdown-divider">
-                          </li>
-                          <li>
-                              <a class="dropdown-item" href="../Html/return.html">Return & Exchange Policies</a>
-                          </li>
-                      </ul>
-                  </li>
-                  
-              </ul>
-              <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-light navbar-button" type="submit">Search</button>
-              </form>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../Css/customers.css" />
+  <title>Customers</title>
+</head>
 
-              <!-- Button trigger modal -->
-              <button type="button" class="btn navbar-button btn-danger mx-2" data-bs-toggle="modal"
-                  data-bs-target="#loginModal">
-                  Login
-              </button>
+<body>
 
-              <!-- Login Modal -->
-              <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                  aria-labelledby="loginModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                  aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                              <form>
-                                  <div class="form-group">
-                                      <label for="exampleInputEmail1">Email address</label>
-                                      <input type="email" class="form-control" id="exampleInputEmail1"
-                                          aria-describedby="emailHelp" placeholder="Enter email">
-                                      <small id="emailHelp" class="form-text text-muted">We'll never share your email
-                                          with anyone else.</small>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="exampleInputPassword1">Password</label>
-                                      <input type="password" class="form-control" id="exampleInputPassword1"
-                                          placeholder="Password">
-                                  </div>
-                                  <div class="form-check">
-                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                  </div>
-                                  <button type="submit" class="btn btn-primary">Submit</button>
-                              </form>
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Understood</button>
-                          </div>
-                      </div>
-                  </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../Html/index.html">Legal Rifles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../Html/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Html/products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Html/contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../Html/customers.html">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Html/cities.html">Cities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Premium
+              <span class="badge bg-warning text-dark">Coming Soon</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hot & Others
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">
+                  Russian Versions
+                  <span class="badge bg-sucess text-dark">Coming Soon</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Afghani Versions
+                  <span class="badge bg-warning text-dark">Coming Soon</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  American Versions
+                  <span class="badge bg-warning text-dark">Coming Soon</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Html/return.html">Return & Exchange Policies</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light navbar-button" type="submit">Search</button>
+        </form>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn navbar-button btn-danger mx-2" data-bs-toggle="modal"
+          data-bs-target="#loginModal">
+          Login
+        </button>
+
+        <!-- Login Modal -->
+        <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="loginModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-
-              <!-- Button trigger modal -->
-              <button type="button" class="btn navbar-button btn-danger" data-bs-toggle="modal"
-                  data-bs-target="#signupModal">
-                  SignUp
-              </button>
-
-              <!-- SignUp Modal -->
-              <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false"
-                  tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="signupModalLabel">Get an account</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                  aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                              <form>
-                                  <div class="form-group">
-                                      <label for="signupEmail">Email address</label>
-                                      <input type="email" class="form-control" id="signupEmail"
-                                          placeholder="Enter email">
-                                      <small id="emailHelp" class="form-text text-muted">We'll never share your email
-                                          with anyone else.</small>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="signupPassword">Password</label>
-                                      <input type="password" class="form-control" id="signupPassword"
-                                          placeholder="Password">
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="confirmPassword">Confirm Password</label>
-                                      <input type="password" class="form-control" id="confirmPassword"
-                                          placeholder="Password">
-                                  </div>
-                                  <button type="submit" class="btn btn-primary">Submit</button>
-                              </form>
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Understood</button>
-                          </div>
-                      </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                      with anyone else.</small>
                   </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
               </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn navbar-button btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">
+          SignUp
+        </button>
+
+        <!-- SignUp Modal -->
+        <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="signupModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="signupModalLabel">Get an account</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="signupEmail">Email address</label>
+                    <input type="email" class="form-control" id="signupEmail" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                      with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" class="form-control" id="signupPassword" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </nav>
 
-    <!-- Testimonials Section -->
-    <section>
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-10 col-xl-8 text-center">
-          <h3 class="mb-4">Customer Reviews</h3>
-          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
-            Discover what our customers have to say about our rifles!
-          </p>
-        </div>
+  <!-- Testimonials Section -->
+  <section>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="mb-4">Customer Reviews</h3>
+        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+          Discover what our customers have to say about our rifles!
+        </p>
       </div>
+    </div>
 
-      <div class="row text-center d-flex align-items-stretch">
-        <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
-          <div class="card testimonial-card">
-            <div class="card-up" style="background-color: #9d789b"></div>
-            <div class="avatar mx-auto bg-white">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
-                class="rounded-circle img-fluid"
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="mb-4">Maria Smantha</h4>
-              <hr />
-              <p class="dark-grey-text mt-4">
-                <i class="fas fa-quote-left pe-2"></i>I recently purchased a
-                rifle from Legal Rifles and it's been an absolute delight! The
-                quality is unmatched, and I feel much safer now.
-              </p>
-            </div>
+    <div class="row text-center d-flex align-items-stretch">
+      <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+        <div class="card testimonial-card">
+          <div class="card-up" style="background-color: #9d789b"></div>
+          <div class="avatar mx-auto bg-white">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" class="rounded-circle img-fluid" />
           </div>
-        </div>
-        <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
-          <div class="card testimonial-card">
-            <div class="card-up" style="background-color: #7a81a8"></div>
-            <div class="avatar mx-auto bg-white">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                class="rounded-circle img-fluid"
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="mb-4">Lisa Cudrow</h4>
-              <hr />
-              <p class="dark-grey-text mt-4">
-                <i class="fas fa-quote-left pe-2"></i>I can't recommend Legal
-                Rifles enough! The rifle I bought is sturdy, reliable, and worth
-                every penny.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-0 d-flex align-items-stretch">
-          <div class="card testimonial-card">
-            <div class="card-up" style="background-color: #6d5b98"></div>
-            <div class="avatar mx-auto bg-white">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
-                class="rounded-circle img-fluid"
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="mb-4">John Smith</h4>
-              <hr />
-              <p class="dark-grey-text mt-4">
-                <i class="fas fa-quote-left pe-2"></i>Legal Rifles is the go-to
-                place for anyone looking for quality rifles. Their customer
-                service is exceptional, and the products are top-notch.
-              </p>
-            </div>
+          <div class="card-body">
+            <h4 class="mb-4">Maria Smantha</h4>
+            <hr />
+            <p class="dark-grey-text mt-4">
+              <i class="fas fa-quote-left pe-2"></i>I recently purchased a rifle
+              from Legal Rifles and it's been an absolute delight! The quality is
+              unmatched, and I feel much safer now.
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="row text-center d-flex align-items-stretch">
-        <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
-          <div class="card testimonial-card">
-            <div class="card-up" style="background-color: blue"></div>
-            <div class="avatar mx-auto bg-white">
-              <img
-                src="../Images/Customer4.png"
-                class="rounded-circle img-fluid"
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="mb-4">Kiki</h4>
-              <hr />
-              <p class="dark-grey-text mt-4">
-                <i class="fas fa-quote-left pe-2"></i>I recently purchased a
-                rifle from Legal Rifles and it's been an absolute delight! The
-                quality is unmatched, and I feel much safer now.
-              </p>
-            </div>
+      <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+        <div class="card testimonial-card">
+          <div class="card-up" style="background-color: #7a81a8"></div>
+          <div class="avatar mx-auto bg-white">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" class="rounded-circle img-fluid" />
           </div>
-        </div>
-        <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
-          <div class="card testimonial-card">
-            <div class="card-up" style="background-color: red"></div>
-            <div class="avatar mx-auto bg-white">
-              <img
-                src="../Images/Customer5.png"
-                class="rounded-circle img-fluid"
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="mb-4">Lilly</h4>
-              <hr />
-              <p class="dark-grey-text mt-4">
-                <i class="fas fa-quote-left pe-2"></i>I can't recommend Legal
-                Rifles enough! The rifle I bought is sturdy, reliable, and worth
-                every penny.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-0 d-flex align-items-stretch">
-          <div class="card testimonial-card">
-            <div class="card-up" style="background-color: green"></div>
-            <div class="avatar mx-auto bg-white">
-              <img
-                src="../Images/Customer6.png"
-                class="rounded-circle img-fluid"
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="mb-4">Billy</h4>
-              <hr />
-              <p class="dark-grey-text mt-4">
-                <i class="fas fa-quote-left pe-2"></i>Legal Rifles is the go-to
-                place for anyone looking for quality rifles. Their customer
-                service is exceptional, and the products are top-notch.
-              </p>
-            </div>
+          <div class="card-body">
+            <h4 class="mb-4">Lisa Cudrow</h4>
+            <hr />
+            <p class="dark-grey-text mt-4">
+              <i class="fas fa-quote-left pe-2"></i>I can't recommend Legal Rifles
+              enough! The rifle I bought is sturdy, reliable, and worth every
+              penny.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg-white py-4 mt-auto">
-      <div class="container px-5">
-        <div
-          class="row align-items-center justify-content-between flex-column flex-sm-row"
-        >
-          <div class="col-auto">
-            <div class="small m-0">
-              Copyright © 2024 Legal Riffles. All rights reserved.
-            </div>
-          </div>
-          <div class="col-auto">
-            <a class="small" href="#!">Privacy</a>
-            <span class="mx-1">·</span>
-            <a class="small" href="#!">Terms</a>
-            <span class="mx-1">·</span>
-            <a class="small" href="../Html/contact.html">Contact</a>
-          </div>
-        </div>
-      </div>
-    </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="col-md-4 mb-0 d-flex align-items-stretch">
+        <div class="card testimonial-card">
+          <div class="card-up" style="background-color: #6d5b98"></div>
+          <div class="avatar mx-auto bg-white">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class="rounded-circle img-fluid" />
+          </div>
+          <div class="card-body">
+            <h4 class="mb-4">John Smith</h4>
+            <hr />
+            <p class="dark-grey-text mt-4">
+              <i class="fas fa-quote-left pe-2"></i>Legal Rifles is the go-to
+              place for anyone looking for quality rifles. Their customer service
+              is exceptional, and the products are top-notch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="col-auto">
+          <div class="small m-0">Copyright © 2024 Legal Riffles. All rights reserved.</div>
+        </div>
+        <div class="col-auto">
+          <a class="small" href="../Html/return.html">Return & Exchange</a>
+          <span class="mx-1">·</span>
+          <a class="small" href="../Html/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
